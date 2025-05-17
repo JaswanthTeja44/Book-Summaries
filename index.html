@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Summary Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Book Summary Hub - JHTK</h1>
+    <p>Browse, read, and share your favorite book summaries!</p>
+  </header>
+  <div class="container">
+    <h2>Browse Books from Internet</h2>
+    <div class="form-group">
+      <label for="search-book">Search Book</label>
+      <input type="text" id="search-book" placeholder="Enter book title or author" />
+      <button onclick="searchBooks()">Search</button>
+    </div>
+    <div id="browse-results" class="browse-results"></div>
+
+    <div id="preview-reader">
+      <h3>Preview Reader</h3>
+      <p id="preview-text">Loading preview...</p>
+    </div>
+
+    <h2>Add New Summary</h2>
+    <div id="error" class="error"></div>
+    <div class="form-group">
+      <label for="title">Book Title</label>
+      <input type="text" id="title" placeholder="Enter book title" />
+    </div>
+    <div class="form-group">
+      <label for="category">Category</label>
+      <select id="category">
+        <option value="Fiction">Fiction</option>
+        <option value="Non-Fiction">Non-Fiction</option>
+        <option value="Self-Help">Self-Help</option>
+        <option value="Technology">Technology</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="summary">Summary</label>
+      <textarea id="summary" rows="5" placeholder="Write your summary here..."></textarea>
+    </div>
+    <div class="form-group">
+      <label for="rating">Rating (1-5)</label>
+      <input type="number" id="rating" min="1" max="5" />
+    </div>
+    <button onclick="addSummary()">Submit Summary</button>
+
+    <h2 style="margin-top: 2rem;">Summaries</h2>
+    <div id="summary-list"></div>
+  </div>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9f9fb;
+      color: #333;
+    }
+    header {
+      background-color: #b76d4b;
+      background-image: linear-gradient(315deg, #4b6cb7 0%, #b53737 74%);
+      padding: 1.5rem;
+      color: white;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    .form-group input, .form-group textarea, .form-group select {
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: #4b6cb7;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      background-color: #4b6cb7;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #3a5791;
+    }
+    .summary-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .summary-card:hover {
+      transform: translateY(-5px);
+    }
+    .rating {
+      color: #fbc02d;
+    }
+    .category-tag {
+      background: #e0e0e0;
+      border-radius: 5px;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.8rem;
+      margin-left: 0.5rem;
+    }
+    .error {
+      color: red;
+      font-size: 0.9rem;
+    }
+    .browse-results {
+      background: #f0f0f0;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .browse-item {
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      border-bottom: 1px solid #ccc;
+    }
+    .browse-item:hover {
+      background-color: #e6e6e6;
+    }
+    .read-link {
+      display: block;
+      margin-top: 0.5rem;
+      color: #4b6cb7;
+      text-decoration: underline;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    #preview-reader {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+      display: none;
+      margin-top: 1rem;
+    }
